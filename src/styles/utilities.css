@@ -1,0 +1,64 @@
+@layer utilities {
+  .container {
+    max-width: 94vw;
+    margin: 0 auto;
+  }
+
+  .content {
+    width: var(--w-content);
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .article {
+    > div,
+    p,
+    img,
+    video {
+      margin-top: 1rem;
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      border-radius: var(--radius-sm);
+    }
+
+    a {
+      color: var(--color-accent-foreground);
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.hashtag {
+        padding: 0.32rem 0.64rem;
+        font-size: var(--text-sm);
+        color: var(--color-secondary-foreground);
+        background-color: var(--color-secondary);
+        border-radius: 999px;
+      }
+    }
+
+    *:first-child {
+      margin-top: 0;
+    }
+
+    *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .dark {
+    .article {
+      a {
+        color: var(--color-accent);
+
+        &.hashtag {
+          color: var(--color-secondary-foreground);
+        }
+      }
+    }
+  }
+}
