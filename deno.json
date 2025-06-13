@@ -1,3 +1,50 @@
 {
-  "unstable": ["unsafe-proto"]
+  "tasks": {
+    "dev:next": "next dev --turbopack",
+    "dev:firehose": "deno run --watch --env -A ./src/firehose/index.ts",
+    "build": "next build",
+    "start:next": "next start",
+    "start:firehose": "deno run --env --allow-net ./src/firehose/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "lint": "biome lint",
+    "lint:fix": "biome lint --write",
+    "format": "biome format --write"
+  },
+  "imports": {
+    "@/": "./src/",
+    "@atproto/api": "npm:@atproto/api@^0.15.8",
+    "@electric-sql/pglite": "npm:@electric-sql/pglite@^0.3.3",
+    "@libsql/client": "npm:@libsql/client@^0.15.7",
+    "@radix-ui/react-slot": "npm:@radix-ui/react-slot@^1.2.3",
+    "@tailwindcss/postcss": "npm:@tailwindcss/postcss@^4.1.7",
+    "class-variance-authority": "npm:class-variance-authority@^0.7.1",
+    "clsx": "npm:clsx@^2.1.1",
+    "date-fns": "npm:date-fns@^4.1.0",
+    "drizzle-orm": "npm:drizzle-orm@^0.44.2",
+    "lucide-react": "npm:lucide-react@^0.511.0",
+    "neverthrow": "npm:neverthrow@^8.2.0",
+    "next-themes": "npm:next-themes@^0.4.6",
+    "postcss": "npm:postcss@^8.5.3",
+    "react": "npm:react@^19.0.0",
+    "react-dom": "npm:react-dom@^19.0.0",
+    "next": "npm:next@15.2.1",
+    "tailwind-merge": "npm:tailwind-merge@^3.3.0",
+    "tailwindcss": "npm:tailwindcss@^4.1.7",
+    "uuid": "npm:uuid@^11.1.0",
+    "ws": "npm:ws@^8.18.2",
+    "zod": "npm:zod@^3.25.20",
+    "drizzle-kit": "npm:drizzle-kit@^0.31.1",
+    "tw-animate-css": "npm:tw-animate-css@^1.3.0",
+    "typescript": "npm:typescript@^5",
+    "@types/node": "npm:@types/node@^20",
+    "@types/react": "npm:@types/react@^19",
+    "@types/react-dom": "npm:@types/react-dom@^19"
+  },
+  "unstable": ["unsafe-proto"],
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext", "deno.window", "deno.ns"],
+    "jsx": "react-jsx"
+  },
+  "nodeModulesDir": "auto"
 }
