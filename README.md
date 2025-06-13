@@ -1,20 +1,10 @@
 <h1>
-   <img src="./public/images/logo.png" alt="@diary" height="128" />
+   <img src="./public/images/logo.png" alt="@diary" height="48" />
 </h1>
 
 A full-stack web application for collecting and displaying Bluesky posts through the Jetstream firehose.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Architecture](#architecture)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Development Commands](#development-commands)
-- [Environment Variables](#environment-variables)
-- [Project Structure](#project-structure)
-- [Testing](#testing)
-- [Configuration](#configuration)
+![Screenshot 1](./public/screenshots/amber-minimal.jpg)
 
 ## Overview
 
@@ -104,3 +94,11 @@ Create a `.env` file based on `.env.example`:
 ### Database Adapters
 
 - To change database connections, refer to repository implementations in `src/core/adapters/${service}/${entity}Repository.ts`
+
+## Screenshots
+
+![Screenshot 1](./public/screenshots/amber-minimal.jpg)
+
+![Screenshot 2](./public/screenshots/kodama-grove.jpg)
+
+![Screenshot 3](./public/screenshots/neo-brutalism.jpg)
