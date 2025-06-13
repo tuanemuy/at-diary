@@ -4,7 +4,7 @@
 
 A full-stack web application for collecting and displaying Bluesky posts through the Jetstream firehose.
 
-![Screenshot 1](./public/screenshots/amber-minimal.jpg)
+<img src="./public/screenshots/amber-minimal.jpg" alt="Screenshot 1" width="340" />
 
 ## Overview
 
@@ -97,8 +97,8 @@ Create a `.env` file based on `.env.example`:
 
 ## Screenshots
 
-![Screenshot 1](./public/screenshots/amber-minimal.jpg)
+<img src="./public/screenshots/amber-minimal.jpg" alt="Screenshot 1" width="340" />
 
-![Screenshot 2](./public/screenshots/kodama-grove.jpg)
+<img src="./public/screenshots/kodama-grove.jpg" alt="Screenshot 2" width="340" />
 
-![Screenshot 3](./public/screenshots/neo-brutalism.jpg)
+<img src="./public/screenshots/neo-brutalism.jpg" alt="Screenshot 3" width="340" />
