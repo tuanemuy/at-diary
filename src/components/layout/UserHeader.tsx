@@ -9,7 +9,7 @@ type Props = {
 export function UserHeader({ leading, trailing }: Props) {
   return (
     <div className="p-4 md:p-6 pb-0 md:pb-0">
-      <div className="relative w-full aspect-[3/1] md:aspect-[4/1]">
+      <div className="relative container aspect-[3/1] md:aspect-[4/1]">
         {profile.banner && (
           <img
             src={profile.banner}
@@ -27,7 +27,7 @@ export function UserHeader({ leading, trailing }: Props) {
         </div>
 
         <div className="absolute bottom-0 left-0 w-full translate-y-1/2">
-          <div className="content px-3">
+          <div className="content px-3 md:px-6">
             <img
               className="block size-20 md:size-32 object-cover bg-muted-foreground rounded-full border-3 border-secondary shadow"
               src={profile.avatar}

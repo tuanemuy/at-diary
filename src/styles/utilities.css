@@ -1,11 +1,11 @@
 @layer utilities {
   .container {
-    max-width: 94vw;
+    max-width: var(--container-3xl);
     margin: 0 auto;
   }
 
   .content {
-    width: var(--w-content);
+    width: var(--container-xl);
     max-width: 90vw;
     margin-left: auto;
     margin-right: auto;
