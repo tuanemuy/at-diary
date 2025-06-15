@@ -4,7 +4,7 @@
     "dev:firehose": "deno run --watch --env -A ./src/firehose/index.ts",
     "build": "next build",
     "start:next": "next start",
-    "start:firehose": "deno run --env --allow-net ./src/firehose/index.ts",
+    "start:firehose": "deno run --env -A ./src/firehose/index.ts",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "lint": "biome lint",
