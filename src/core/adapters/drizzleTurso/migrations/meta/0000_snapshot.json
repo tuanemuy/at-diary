@@ -32,10 +32,7 @@
       "indexes": {
         "post_tag_idx": {
           "name": "post_tag_idx",
-          "columns": [
-            "post_id",
-            "tag_id"
-          ],
+          "columns": ["post_id", "tag_id"],
           "isUnique": true
         }
       },
@@ -44,12 +41,8 @@
           "name": "post_tags_post_id_posts_id_fk",
           "tableFrom": "post_tags",
           "tableTo": "posts",
-          "columnsFrom": [
-            "post_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["post_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         },
@@ -57,12 +50,8 @@
           "name": "post_tags_tag_id_tags_id_fk",
           "tableFrom": "post_tags",
           "tableTo": "tags",
-          "columnsFrom": [
-            "tag_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["tag_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -129,9 +118,7 @@
       "indexes": {
         "rkey_idx": {
           "name": "rkey_idx",
-          "columns": [
-            "rkey"
-          ],
+          "columns": ["rkey"],
           "isUnique": true
         }
       },
@@ -161,9 +148,7 @@
       "indexes": {
         "name_idx": {
           "name": "name_idx",
-          "columns": [
-            "name"
-          ],
+          "columns": ["name"],
           "isUnique": true
         }
       },

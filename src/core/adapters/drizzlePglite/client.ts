@@ -1,11 +1,11 @@
-import * as path from "jsr:@std/path";
+import path from "node:path";
 import {
   RepositoryError,
   RepositoryErrorCode,
 } from "@/core/domain/errors/repositoryError.ts";
 import { PGlite } from "@electric-sql/pglite";
 import { drizzle } from "drizzle-orm/pglite";
-import Migrator from "drizzle-orm/pglite/migrator";
+import * as Migrator from "drizzle-orm/pglite/migrator";
 import * as schema from "./schema.ts";
 
 export type Database = ReturnType<typeof drizzle<typeof schema>>;

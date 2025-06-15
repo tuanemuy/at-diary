@@ -17,7 +17,9 @@
     "@electric-sql/pglite": "npm:@electric-sql/pglite@^0.3.3",
     "@libsql/client": "npm:@libsql/client@^0.15.7",
     "@radix-ui/react-slot": "npm:@radix-ui/react-slot@^1.2.3",
+    "@std/path": "jsr:@std/path@^1.1.0",
     "@tailwindcss/postcss": "npm:@tailwindcss/postcss@^4.1.7",
+    "@types/ws": "npm:@types/ws@^8.18.1",
     "class-variance-authority": "npm:class-variance-authority@^0.7.1",
     "clsx": "npm:clsx@^2.1.1",
     "date-fns": "npm:date-fns@^4.1.0",
@@ -37,14 +39,24 @@
     "drizzle-kit": "npm:drizzle-kit@^0.31.1",
     "tw-animate-css": "npm:tw-animate-css@^1.3.0",
     "typescript": "npm:typescript@^5",
-    "@types/node": "npm:@types/node@^20",
+    "@types/node": "npm:@types/node@^24.0.1",
     "@types/react": "npm:@types/react@^19",
     "@types/react-dom": "npm:@types/react-dom@^19"
   },
   "unstable": ["unsafe-proto"],
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext", "deno.window", "deno.ns"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "deno.window",
+      "deno.ns",
+      "deno.unstable"
+    ],
     "jsx": "react-jsx"
   },
-  "nodeModulesDir": "auto"
+  "nodeModulesDir": "auto",
+  "lint": {
+    "exclude": ["*.d.ts"]
+  }
 }

@@ -1,4 +1,4 @@
-import * as path from "jsr:@std/path";
+import path from "node:path";
 import { WebSocket } from "ws";
 import { processFirehoseAction } from "@/actions/post.ts";
 

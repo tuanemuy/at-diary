@@ -1,4 +1,4 @@
-import * as path from "jsr:@std/path";
+import path from "node:path";
 import { PGlite } from "@electric-sql/pglite";
 import { drizzle } from "drizzle-orm/pglite";
 import { migrate } from "drizzle-orm/pglite/migrator";
